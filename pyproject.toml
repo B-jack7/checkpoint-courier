@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "checkpoint-courier"
+version = "0.1.0"
+description = "Verified, append-only backups for completed ML checkpoint files"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "B-jack7"}]
+dependencies = []
+
+[project.scripts]
+checkpoint-courier = "checkpoint_courier.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/B-jack7/checkpoint-courier"
+Issues = "https://github.com/B-jack7/checkpoint-courier/issues"
+
+[tool.setuptools.packages.find]
+include = ["checkpoint_courier*"]

@@ -1,0 +1,18 @@
+name: Bug report
+description: Report a reproducible problem using synthetic or non-sensitive inputs.
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, package version or commit, and relevant storage/dependencies.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: Commands, expected behavior, actual behavior and error output. Do not attach private data or credentials.
+    validations:
+      required: true
